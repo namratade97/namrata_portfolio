@@ -1,0 +1,621 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- <title>Editorial by HTML5 UP</title> -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<!-- <a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a> -->
+									<a href="index.html" class="logo"></a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m Namrata!<br />
+											<!-- by HTML5 UP -->
+										</h1>
+											<!-- <p>Data Scientist. ML Engineer.</p> -->
+											 <p><span id="typing"></span></p>
+
+											 <style>
+												#typing {
+												display: inline-block;   /* ensures width applies */
+												min-width: 150px;        /* adjust to widest word */
+												white-space: nowrap;     /* prevent wrapping */
+												}
+											</style>
+
+											<script>
+												const words = ["Data Scientist.", "ML Engineer.", "AI Specialist."];
+												let i = 0;
+												let j = 0;
+												let currentWord = "";
+												let isDeleting = false;
+												const typingSpeed = 100; // same speed for typing and deleting
+												const pauseTime = 1000;  // pause at end of word
+
+												function type() {
+												const typingElement = document.getElementById("typing");
+
+												if (!isDeleting && j <= words[i].length) {
+													currentWord = words[i].substring(0, j++);
+													typingElement.textContent = currentWord;
+												} else if (isDeleting && j >= 0) {
+													currentWord = words[i].substring(0, j--);
+													typingElement.textContent = currentWord;
+												}
+
+												if (j === words[i].length && !isDeleting) {
+													isDeleting = true;
+													setTimeout(type, pauseTime); // pause at end of word
+													return;
+												} else if (isDeleting && j === 0) {
+													isDeleting = false;
+													i = (i + 1) % words.length;
+													setTimeout(type, pauseTime / 2); // short pause before next word
+													return;
+												}
+
+												setTimeout(type, typingSpeed); // same speed always
+												}
+
+												type();
+											</script>
+
+
+										</header>
+										<p>Data Scientist with 5+ years of experience including developing and deploying production-ready ML systems, covering ASR, NLP, Computer Vision, and Time Series Forecasting applications. Skilled in end-to-end ML lifecycle, from problem scoping and modeling, to deployment via APIs and cloud platforms, I care about developing robust, real-world ML systems with measurable business impact.</p>
+										<ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="image object">
+										<img src="images/namrata.jpg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section id="skills">
+									<header class="major">
+										<h2>Skills</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon solid fa-code"></span>
+											<div class="content">
+												<h3>Programming Languages</h3>
+												<p>
+												<span class="chip">Python</span>
+												<span class="chip">R</span>
+												<span class="chip">C++</span>
+												<span class="chip">Java</span>
+												<span class="chip">C</span>
+												<span class="chip">PHP</span>
+												</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-database"></span>
+											<div class="content">
+												<h3>Database Tools</h3>
+												<p>
+												<span class="chip">SQL</span>
+												<span class="chip">Oracle PL/SQL</span>
+												<span class="chip">MySQL</span>
+												</p>
+											</div>
+										</article>
+
+										<article>
+											<span class="icon solid fa-brain"></span>
+											<div class="content">
+												<h3>Machine Learning and Deep Learning</h3>
+												<!-- <p><strong>Data & ML Libraries:</strong> Pandas, NumPy, scikit-learn, XGBoost, Prophet, SARIMA</p>
+												<p><strong>Deep Learning Frameworks:</strong> TensorFlow, PyTorch, Keras, RNN, LSTM, Transformers</p>
+												<p><strong>NLP & Vision:</strong> NLTK, SentencePiece, Hugging Face, OpenCV, LangChain, Evidently</p> -->
+												<!-- <p>Pandas, NumPy, scikit-learn, TensorFlow, PyTorch, Keras, SentencePiece, NLTK, OpenCV, Hugging Face, LangChain, Evidently, XGBoost, Prophet, SARIMA, RNN, LSTM, Transformers</p> -->
+												 <p>
+												<span class="chip">Pandas</span>
+												<span class="chip">NumPy</span>
+												<span class="chip">scikit-learn</span>
+												<span class="chip">TensorFlow</span>
+												<span class="chip">PyTorch</span>
+												<span class="chip">Keras</span>
+												<span class="chip">SentencePiece</span>
+												<span class="chip">NLTK</span>
+												<span class="chip">OpenCV</span>
+												<span class="chip">Hugging Face</span>
+												<span class="chip">LangChain</span>
+												<span class="chip">Evidently</span>
+												<span class="chip">XGBoost</span>
+												<span class="chip">Prophet</span>
+												<span class="chip">SARIMA</span>
+												<span class="chip">RNN</span>
+												<span class="chip">LSTM</span>
+												<span class="chip">Transformers</span>
+												</p>
+
+											</div>
+										</article>
+
+
+										<article>
+											<span class="icon solid fa-cogs"></span>
+											<div class="content">
+												<h3>Cloud & ML-Ops</h3>
+												<!-- <p>MLflow, DVC, ONNX, AWS (Lambda, SAM, S3, EC2, SageMaker, CloudWatch), TensorBoard, Docker, Kubernetes, Jenkins, Git, CI/CD</p> -->
+												 <p>
+												<span class="chip">MLflow</span>
+												<span class="chip">DVC</span>
+												<span class="chip">ONNX</span>
+												<span class="chip">AWS Lambda</span>
+												<span class="chip">AWS SAM</span>
+												<span class="chip">AWS S3</span>
+												<span class="chip">AWS EC2</span>
+												<span class="chip">AWS SageMaker</span>
+												<span class="chip">AWS CloudWatch</span>
+												<span class="chip">TensorBoard</span>
+												<span class="chip">Docker</span>
+												<span class="chip">Kubernetes</span>
+												<span class="chip">Jenkins</span>
+												<span class="chip">Git</span>
+												<span class="chip">CI/CD</span>
+												</p>
+
+											</div>
+										</article>
+
+										
+
+										<article>
+											<span class="icon solid fa-chart-bar"></span>
+											<div class="content">
+												<h3>Data Visualization</h3>
+												<!-- <p>Matplotlib, Seaborn, Streamlit, Plotly, Vega-Altair, Tableau</p> -->
+												 <p>
+												<span class="chip">Matplotlib</span>
+												<span class="chip">Seaborn</span>
+												<span class="chip">Streamlit</span>
+												<span class="chip">Plotly</span>
+												<span class="chip">Vega-Altair</span>
+												<span class="chip">Tableau</span>
+												</p>
+											</div>
+										</article>
+
+										<article>
+											<span class="icon solid fa-network-wired"></span>
+											<div class="content">
+												<h3>Big Data</h3>
+												<!-- <p>Hadoop ecosystem (Pig, Hive, HBase), Spark</p> -->
+												 <p>
+												<span class="chip">Hadoop ecosystem (Pig, Hive, HBase)</span>
+												<!-- <span class="chip">Pig</span>
+												<span class="chip">Hive</span>
+												<span class="chip">HBase</span> -->
+												<span class="chip">Spark</span>
+												</p>
+											</div>
+										</article>
+
+										<article>
+											<span class="icon solid fa-eye"></span>
+											<div class="content">
+												<h3>Explainability</h3>
+												<p>
+													<span class="chip">LIME</span>
+ 												    <span class="chip">SHAP</span>
+												</p>
+											</div>
+										</article>
+
+										<article>
+											<span class="icon solid fa-tools"></span>
+											<div class="content">
+												<h3>Platforms & Tools</h3>
+												<!-- <p>Linux, macOS, Windows, Jupyter, Flask, SPSS, Stata, VSCode, Doxygen, Latex, Jira</p> -->
+												 <p>
+												<span class="chip">Linux</span>
+												<span class="chip">macOS</span>
+												<span class="chip">Windows</span>
+												<span class="chip">Jupyter</span>
+												<span class="chip">Flask</span>
+												<span class="chip">SPSS</span>
+												<span class="chip">Stata</span>
+												<span class="chip">VSCode</span>
+												<span class="chip">Doxygen</span>
+												<span class="chip">LaTeX</span>
+												<span class="chip">Jira</span>
+												</p>
+
+											</div>
+										</article>
+
+
+
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section id="projects">
+									<header class="major">
+										<h2>Projects</h2>
+									</header>
+									<div class="posts">
+										<!-- <article> -->
+											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+										<article class="custom-video-article">
+											<a href="#" class="audio-video-container">
+												<span class="video1-wrap">
+													<video class="video1" autoplay loop muted playsinline>
+														<source src="videos/pca.mp4" type="video/mp4">
+													</video>
+													<span class="video-label">Audio Embeddings</span>
+												</span>
+
+												<span class="video2-wrap">
+													<video class="video2" autoplay loop muted playsinline>
+														<source src="videos/asr.mp4" type="video/mp4">
+													</video>
+													<span class="video-label">Transformer Activations</span>
+												</span>
+											</a>
+											<h3>Streaming ASR with Intent Detection</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/streaming-asr-with-intent-detection.git" 
+													target="_blank" rel="noopener noreferrer" 
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+										<article class="yolo-article">
+											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+											 <a href="#" class="image">
+												<div class="video-container">
+													<div class="video-wrapper">
+														<video class="project-video" autoplay loop muted playsinline>
+															<source src="videos/yolo_original.mp4" type="video/mp4">
+														</video>
+														<span class="video-label">Original YOLOv5</span>
+													</div>
+
+													<div class="video-wrapper">
+														<video class="project-video" autoplay loop muted playsinline>
+															<source src="videos/yolo_modified.mp4" type="video/mp4">
+														</video>
+														<span class="video-label">My YOLOv5</span>
+													</div>
+												</div>
+											</a>
+											<h3>Improve YOLOv5 Performance</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/YOLOv5_Performance_Enhancement"
+													target="_blank" rel="noopener noreferrer" 
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a> -->
+											 <a href="#" class="image">
+												<video id="appDemoVideo" class="project-video" autoplay loop muted playsinline>
+													<source src="videos/Screencast.mp4" type="video/mp4">
+												</video>
+											</a>
+											<script>
+												document.getElementById("appDemoVideo").playbackRate = 2;  // 1.0 = normal, 1.5 is faster
+											</script>
+											<h3>Interactive App for Data Analysis and ML Model Training</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Interactive%20App%20for%20ML%20Model%20Training%20and%20EDA" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a> -->
+											 <a href="#" class="image anomaly-slideshow">
+												<img src="images/anomaly0.png" alt="">
+												<img src="images/anomaly1.png" alt="">
+												<img src="images/anomaly2.png" alt="">
+												<img src="images/anomaly3.png" alt="">
+												<img src="images/anomaly5.png" alt="">
+												<img src="images/anomaly6.png" alt="">
+												<img src="images/anomaly7.png" alt="">
+											 </a>
+											<h3>Detecting and Explaining Anomalies with LRP (XAI)</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Detecting%20and%20Explaining%20Anomalies%20and%20Cluster%20Analysis%20on%20Unsupervised%20Dataset" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a> -->
+											 <a href="#" class="image ptb-slideshow">
+												<img src="images/ptb1.png" alt="">
+												<img src="images/ptb2.png" alt="">
+												<img src="images/ptb3.png" alt="">
+												<img src="images/ptb4.png" alt="">
+											 </a>
+											<h3>Forecasting Energy Prices for Physikalisch-Technische Bundesanstalt</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/PTB%20Time%20Series" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a> -->
+											 <div class="image side-by-side">
+												<div class="heatmap-container">
+												<!-- Left: Static original -->
+												<div class="half">
+													<img src="images/pixel_heatmap_og.png" alt="Original">
+													<div class="label">Image of a Leaf</div>
+												</div>
+
+												<!-- Right: Crossfade looping -->
+												<div class="half crossfade">
+													<img src="images/pixel_heatmap_og.png" alt="Original" class="fade-out-in">
+													<img src="images/pixel_heatmap_result.png" alt="Heatmap" class="fade-in-out">
+													<div class="label">Which Pixels Capture Features?</div>
+												</div>
+												</div>
+											</div>
+
+											<h3>Building Pixel Contribution Maps of CNNs</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Pixel%20Contribution%20Maps-Emphasizing%20Excitatory%20Effects%20in%20CNN" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a> -->
+											<a href="#" class="image chest-slideshow">
+												<img src="images/chest1.png" alt="">
+												<img src="images/chest2.png" alt="">
+												<img src="images/chest3.png" alt="">
+												<img src="images/chest4.png" alt="">
+											</a>
+											<h3>Multi-Class Detection of Thoracic Anomalies in Chest X-rays</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Multi-Class%20Detection%20of%20Thoracic%20Anomalies%20in%20Chest%20Radiographs" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+										
+
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a> -->
+											 <a href="#" class="image atom-slideshow">
+												<img src="images/atom1.png" alt="">
+												<img src="images/atom2.png" alt="">
+												<img src="images/atom3.png" alt="">
+												<img src="images/atom4.png" alt="">
+												<img src="images/atom5.png" alt="">
+											 </a>
+											<h3>Interpretable Prediction of Molecular Atomization Energy</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Interpretable%20Prediction%20of%20Molecular%20Atomization%20Energy%20from%203D%20Geometry" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+
+										
+
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a> -->
+											 <a href="#" class="image parkinsons-slideshow">
+												<img src="images/parkinsons1.png" alt="">
+												<img src="images/parkinsons2.png" alt="">
+												<img src="images/parkinsons3.png" alt="">
+												<img src="images/parkinsons4.png" alt="">
+												<img src="images/parkinsons5.png" alt="">
+												
+											 </a>
+											<h3>Parkinson's Disease Prediction from Live Voice Recordings</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Parkinson's_Disease_Prediction_From_Audio" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+
+										<article>
+											<!-- <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a> -->
+											 <a href="#" class="image hen-slideshow">
+												<img src="images/hen1.png" alt="">
+												<img src="images/hen2.png" alt="">
+												<img src="images/hen3.png" alt="">
+												<img src="images/hen4.png" alt="">
+											</a>
+											<h3>Hen's Activity Classification Model (CNNs)</h3>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											<p>Tech Stack: PyTorch, Tensorflow, Kuberenets ....</p>
+											<ul class="actions">
+												<li><a href="https://github.com/namratade97/Data-Science-Projects/tree/main/Hen%E2%80%99s_Activity_Classification_With_YOLO" 
+													target="_blank" rel="noopener noreferrer"
+													class="button">GitHub</a></li>
+											</ul>
+										</article>
+
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">About Me</a></li>
+										<li><a href="workexp.html">Work Experience</a></li>
+										<li><a href="education.html">Education</a></li>
+										<li><a href="index.html#skills">Skills</a></li>  
+										<li><a href="index.html#projects">Projects</a></li>  
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Recommendation Letter</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<!-- <article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article> -->
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">Download</a></li>
+									</ul>
+								</section>
+								<section>
+									<header class="major">
+										<h2>My CV</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<!-- <article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article> -->
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">Download</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">namrata.de.1997@gmail.com</a></li>
+										<li class="icon solid fa-phone">+49 17645602970</li>
+										<li class="icon solid fa-home">Berlin, Germany</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<!-- <footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer> -->
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
